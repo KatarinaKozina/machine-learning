@@ -1,3 +1,4 @@
+from multiprocessing.spawn import import_main_path
 import quandl
 import pandas as pd
 import math
@@ -10,12 +11,10 @@ import matplotlib.pyplot as plt
 from matplotlib import style
 import datetime
 import pickle
+import parser
 
-
-#komentar
-
-# nove promjene
-
+#komentar1
+#komentar2
 style.use('ggplot')
 
 df = quandl.get("WIKI/GOOGL")
