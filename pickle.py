@@ -12,6 +12,10 @@ import datetime
 import pickle
 
 
+#komentar
+
+# nove promjene
+
 style.use('ggplot')
 
 df = quandl.get("WIKI/GOOGL")
@@ -41,7 +45,7 @@ x = preprocessing.scale(x)
 
 x_lately = x[-forecast_out:] #zadnjih 35 uzima
 
-x = x[:-forecast_out] #zadnjih 35 ne uzima
+x = x[:-forecast_out] 
 
 
 df.dropna(inplace=True)
