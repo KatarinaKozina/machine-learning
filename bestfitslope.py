@@ -11,3 +11,5 @@ def best_fit_slope(xs,ys):
 
 m=best_fit_slope(xs,ys)
 print(m)
+#komentar1
+#komentar2
