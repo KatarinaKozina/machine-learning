@@ -38,14 +38,11 @@ print(accuracy)
 
 example_measures = np.array([[4,2,1,1,1,2,3,2,1],[4,2,1,1,1,2,3,2,1]])
 example_measures = example_measures.reshape(2, -1)
-print(example_measures)
+#print(example_measures)
 prediction = clf.predict(example_measures)
 print(prediction)
 
 #onoliko redova koliko ima sampleova, a kolumni (-1) što znači da će ih samo rasporedit
 # a ne preostaje nisšta drugo nego da ima onda jednu kolumnu!
 
-#example_measures = np.array([[4,2,1,1,1,2,3,2,1],[4,2,1,1,1,2,3,2,1]])
-#example_measures = example_measures.reshape(len(example_measures), -1)
-#prediction = clf.predict(example_measures)
-#print(prediction)
+
