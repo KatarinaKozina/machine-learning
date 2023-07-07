@@ -22,7 +22,7 @@ df = df[['Adj. Close', 'HL_PCT', 'PCT_change', 'Adj. Volume']]
 
 
 forecast_col = 'Adj. Close'
-df.fillna(value=-99999, inplace=True) #popunjava prazna mjesta
+df.fillna(value=-99999, inplace=True) 
 
 forecast_out = int(math.ceil(0.01 * len(df)))# ceil zaokruzuje na sljedecu vecu vrijednost, len vraća duljinu
 #predvidjamo za 35 sljedecih dana
@@ -30,8 +30,6 @@ print(forecast_out)
 
 df['label'] = df[forecast_col].shift(-forecast_out)
 # forecast_out = 35,
-#znaci da ce data frame forecast col biti pomaknut za 35 mjesta prema gore,
-#znaci da ce se izgubiti prvih 35 vrijednosti a zadnjih 35 bit ce NaN
 print(df['label'])
 
 x = np.array(df.drop(['label'], axis=1))
